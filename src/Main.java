@@ -1,18 +1,21 @@
 public class Main {
     public static void main(String[] args) {
 
-        int x = 100;
-        int up = 1500;
-        int amount = (x + up);
-        int bounse = (up / 100 * 1);
+        int score = 100;
+        int topup = 1000;
+        int amount = (score + topup);
+        int bounse = (topup / 100 * 1);
 
 
-        int balance = (x + up + bounse);
-        if (up > 1000) {
-            System.out.println("Баланс счета при пополнении на " + up + " руб." + "равен " + balance + " руб.");
+        int balance = (score + topup + bounse);
+        if (topup > 1000) {
+            System.out.println("Баланс счета при пополнении на " + topup + " руб." + "равен " + balance + " руб.");
         }
-        if (up < 1000) {
-            System.out.println("Баланс счета при пополнении на " + up + " руб." + "равен " + amount + " руб.");
+        if (topup < 1000) {
+            System.out.println("Баланс счета при пополнении на " + topup + " руб." + "равен " + amount + " руб.");
+        } else balance = (score + topup);
+        if (topup == 1000) {
+            System.out.println("Баланс счета при пополнении на 1000 руб" + "равен " + amount + " руб.");
         }
 
 
