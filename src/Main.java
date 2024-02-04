@@ -13,7 +13,9 @@ public class Main {
         }
         if (topup < 1000) {
             System.out.println("Баланс счета при пополнении на " + topup + " руб." + "равен " + amount + " руб.");
-        } else balance = (score + topup);
+        } else {
+            balance = (score + topup);
+        }
         if (topup == 1000) {
             System.out.println("Баланс счета при пополнении на 1000 руб" + "равен " + amount + " руб.");
         }
