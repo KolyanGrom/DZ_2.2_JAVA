@@ -4,10 +4,10 @@ public class Main {
         int score = 100;
         int topup = 1500;
         int amount = (score + topup);
-        int bounse = (topup / 100 * 1);
+        int bouns = (topup / 100 * 1);
 
 
-        int balance = (score + topup + bounse);
+        int balance = (score + topup + bouns);
         if (topup > 1000) {
             System.out.println("Баланс счета при пополнении на " + topup + " руб. " + "равен: " + balance + " руб.");
         } else {
